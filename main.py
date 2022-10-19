@@ -6,7 +6,7 @@ DEFINED_ACTION_OUTPUTS_NUMBER = 100
 
 
 def set_action_output(name: str, value: str):
-    print(f'::set-output name={name}::{value}')
+    print(f'"{name}={value}" >> $GITHUB_OUTPUT')
 
 
 def print_action_error(msg: str):
